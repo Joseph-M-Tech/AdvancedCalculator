@@ -18,173 +18,11 @@ Variance: σ² = Σ(x - μ)² / n
 
 Standard Deviation: σ = √σ²
 
-Code Examples
-python
-# Example 1: Using the calculator programmatically
-from advanced_calculator import AdvancedCalculator
-import tkinter as tk
 
-root = tk.Tk()
-calculator = AdvancedCalculator(root)
-root.mainloop()
 
-# Example 2: Extending the calculator
-class CustomCalculator(AdvancedCalculator):
-    def add_custom_function(self):
-        # Add your custom functions here
-        pass
-🔧 Development
-Setting Up Development Environment
-Fork and clone the repository
 
-bash
-git clone https://github.com/yourusername/advanced-calculator.git
-cd advanced-calculator
-Create virtual environment
 
-bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install development dependencies
 
-bash
-pip install -r requirements-dev.txt
-Adding New Features
-New Mathematical Functions
-
-python
-def new_function(self, value):
-    # Implement your function
-    return result
-New UI Components
-
-python
-def setup_new_tab(self, parent):
-    # Create new tab with buttons
-    pass
-🐛 Troubleshooting
-Common Issues
-"ModuleNotFoundError: No module named 'tkinter'"
-
-bash
-# Ubuntu/Debian
-sudo apt-get install python3-tk
-
-# macOS
-brew install python-tk
-
-# Windows (Reinstall Python with Tkinter option)
-Calculator window doesn't appear
-
-Check if Python is properly installed
-
-Run with administrative privileges if needed
-
-Check for error messages in terminal
-
-Keyboard shortcuts not working
-
-Ensure window has focus
-
-Check keyboard layout settings
-
-Some functions require specific key combinations
-
-Performance Tips
-Close history panel if not needed
-
-Clear memory periodically
-
-Use keyboard shortcuts for faster operation
-
-🤝 Contributing
-Contributions are welcome! Please follow these steps:
-
-Fork the repository
-
-Create a feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-Contribution Guidelines
-Follow PEP 8 style guide
-
-Add tests for new features
-
-Update documentation accordingly
-
-Use descriptive commit messages
-
-📊 Performance
-Operation	Time Complexity	Memory Usage
-Basic Arithmetic	O(1)	Low
-Scientific Functions	O(1)	Low
-Statistical Operations	O(n)	Medium
-Expression Evaluation	O(n)	Low
-🔒 Security
-This calculator:
-
-Does not connect to the internet
-
-Does not store personal data
-
-All calculations are performed locally
-
-No external dependencies required
-
-📈 Future Enhancements
-Planned features:
-
-Graphing capabilities
-
-Matrix operations
-
-Unit conversions
-
-Programming calculator mode
-
-Custom function definitions
-
-Export calculation history
-
-Multiple color themes
-
-Mobile responsive version
-
-📝 Changelog
-Version 1.0.0 (Current)
-Initial release with basic, scientific, statistics, and formulas tabs
-
-Support for 50+ mathematical functions
-
-History and memory features
-
-Keyboard shortcuts
-
-Comprehensive documentation
-
-🙏 Acknowledgments
-Python Software Foundation for Tkinter
-
-Math library for mathematical functions
-
-Contributors and testers
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-📞 Support
-For support, please:
-
-Check the Troubleshooting section
-
-Open an issue on GitHub
-
-Email: support@example.com
 
 🎮 Quick Commands Cheat Sheet
 bash
@@ -201,133 +39,7 @@ pyinstaller --onefile advanced_calculator.py
 black advanced_calculator.py
 ⭐ Star this repository if you find it useful!
 
-Last Updated: March 2024 | Version: 1.0.0
 
-Now, let me create the supporting files for your GitHub repository:
-
-File 1: .gitignore
-gitignore
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# PyInstaller
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.json
-coverage.json
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Executables
-*.exe
-*.msi
-*.dmg
-
-# Temp files
-*.tmp
-*.temp
 File 2: requirements.txt
 txt
 # Advanced Calculator Requirements
@@ -346,66 +58,11 @@ matplotlib>=3.4.0  # For potential graphing features
 pytest>=6.2.5  # For testing
 black>=21.7b0  # For code formatting
 pylint>=2.11.1  # For code linting
-File 3: LICENSE
-text
-MIT License
 
-Copyright (c) 2024 Advanced Calculator Project
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-File 4: setup.py (Optional - for packaging)
-python
-from setuptools import setup, find_packages
-
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
-
-setup(
-    name="advanced-calculator",
-    version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="Advanced Scientific Calculator with GUI",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/advanced-calculator",
-    packages=find_packages(),
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-        "Topic :: Scientific/Engineering :: Mathematics",
-        "Topic :: Utilities",
-    ],
-    python_requires=">=3.6",
-    entry_points={
-        "console_scripts": [
-            "advanced-calculator=advanced_calculator:main",
-        ],
-    },
-    include_package_data=True,
-)
-File 5: CONTRIBUTING.md
+*********************** CONTRIBUTING.md
 markdown
 # Contributing to Advanced Calculator
 
@@ -440,7 +97,7 @@ Please be respectful and considerate of others when contributing to this project
 
 1. Clone your fork:
    ```bash
-   git clone https://github.com/yourusername/advanced-calculator.git
+   git clone https://github.com/Joseph-M-Tech/advanced-calculator.git
 Create virtual environment:
 
 bash
